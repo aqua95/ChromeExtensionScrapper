@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+
+	"name": "Gather Notes",
+	"description": "Get things together here",
+	"version": "1.0",
+	"author": "RP",
+	"content_scripts" : 
+		[
+			{
+				"matches":["<all_urls>"],
+				"js":["content.js"]
+			}
+		],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Start"
+	}
+}
